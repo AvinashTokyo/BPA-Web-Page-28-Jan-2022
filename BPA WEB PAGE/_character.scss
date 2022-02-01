@@ -1,0 +1,36 @@
+#character {
+  background: url("./img/c-bg-2000_4000.png");
+  height: auto;
+  width: auto;
+  @include font;
+//   to center the image display block width 50% margin left and right auto.
+  img {
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  p.c-name {
+    text-align: center;
+    padding: 20px;
+    font-weight: 800;
+    color: rgb(27, 27, 82, 0.8);
+  }
+
+  p.c-para{
+      text-align: justify;
+      padding: 5px 10px; 
+  }
+}
+p.char {
+  @include section-head;
+  &:after {
+    background: #e74c3c;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+  }
+}

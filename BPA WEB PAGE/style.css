@@ -1,0 +1,252 @@
+#header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-variant: small-caps;
+  background-color: #e74c3c;
+}
+#header img {
+  border: 1px solid white;
+  width: auto;
+  height: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu li {
+  display: inline-block;
+}
+#menu li a {
+  display: block;
+  font-weight: 400;
+  padding: 16px 10px;
+  color: #fff;
+}
+#menu li a:hover {
+  background-color: #c0392b;
+  height: 60px;
+}
+
+@media only screen and (max-width: 759px) {
+  .col-md-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-md-8 {
+    display: flex;
+    justify-content: center;
+  }
+}
+#banner {
+  background: url("./img/banner.jpg") no-repeat 0 0;
+  background-size: cover;
+  height: 350px;
+}
+#banner .banner-title {
+  margin-left: 80px;
+}
+#banner .banner-title p.title {
+  font-variant: small-caps;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 250;
+  background: rgba(224, 226, 194, 0.7);
+  font-weight: bold;
+  font-size: 2em;
+  display: inline-block;
+  margin: 0;
+  margin-top: 150px;
+}
+#banner .banner-title p.lead {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-variant: small-caps;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 250;
+  color: #fff;
+  background: rgba(231, 76, 60, 0.7);
+}
+
+@media only screen and (max-width: 1000px) {
+  #banner .container .row p.title {
+    font-size: 20px;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #banner .container .row p.lead {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #banner {
+    height: auto;
+    width: auto;
+  }
+  #banner .container .row p.title {
+    font-size: 16px;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #banner .container .row p.lead {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #banner {
+    height: auto;
+  }
+  #banner .container .row p.title {
+    font-size: 12px;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #banner .container .row p.lead {
+    font-size: 8px;
+  }
+}
+.section-head {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-variant: small-caps;
+}
+.section-head .sec-head {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.section-head .sec-head:after {
+  background: #e74c3c;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20px auto;
+}
+
+.sec-head-col {
+  text-align: center;
+}
+.sec-head-col span {
+  color: #e74c3c;
+  font-weight: 550;
+}
+.sec-head-col img {
+  height: 160px;
+  width: 150px;
+  width: auto;
+}
+.sec-head-col .e-d-t {
+  font-size: 1.7em;
+}
+
+#character {
+  background: url("./img/c-bg-2000_4000.png");
+  height: auto;
+  width: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-variant: small-caps;
+}
+#character img {
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#character p.c-name {
+  text-align: center;
+  padding: 20px;
+  font-weight: 800;
+  color: rgba(27, 27, 82, 0.8);
+}
+#character p.c-para {
+  text-align: justify;
+  padding: 5px 10px;
+}
+
+p.char {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+p.char:after {
+  background: #e74c3c;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20px auto;
+}
+
+#Gallery-img img {
+  border: 3px solid grey;
+  border-radius: 10%;
+}
+#Gallery-img h4 {
+  color: rgba(255, 0, 0, 0.7);
+  font-weight: bolder;
+  font-size: x-large;
+}
+#Gallery-img p {
+  margin-bottom: 2px;
+}
+#Gallery-img span.blue {
+  color: blue;
+}
+#Gallery-img span.yellow {
+  color: yellow;
+}
+#Gallery-img span.pink {
+  color: pink;
+}
+#Gallery-img span.green {
+  color: green;
+}
+#Gallery-img span.red {
+  color: red;
+}
+
+#About {
+  background: rgba(44, 62, 80, 0.7);
+}
+#About p {
+  font-family: "Courier New", Courier, monospace;
+  font-variant: normal;
+  color: whitesmoke;
+  margin: auto;
+}
+#About h4 {
+  font-weight: 400;
+  text-align: center;
+}
+#About h4:after {
+  background: #313131;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20px auto;
+}
+
+footer {
+  font-variant: normal;
+  background: rgba(44, 62, 80, 0.9);
+  height: 60px;
+  color: whitesmoke;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-variant: small-caps;
+}/*# sourceMappingURL=style.css.map */

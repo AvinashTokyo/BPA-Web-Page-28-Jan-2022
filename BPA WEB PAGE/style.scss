@@ -1,0 +1,10 @@
+@import "header";
+@import "banner";
+@import "section-head";
+@import "character";
+@import "Gallery";
+@import "about";
+
+body{
+    @include font;    
+}

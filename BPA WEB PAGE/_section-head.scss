@@ -1,0 +1,33 @@
+.section-head {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-variant: small-caps;
+  .sec-head {
+    @include section-head;
+
+    // the red line after the sec-head
+    &:after {
+      background: #e74c3c;
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      margin: 20px auto;
+    }
+  }
+}
+
+.sec-head-col {
+  text-align: center;
+  span {
+    color: #e74c3c;
+    font-weight: 550;
+  }
+  img {
+    height: 160px;
+    width: 150px;
+    width: auto;
+  }
+  .e-d-t {
+    font-size: 1.7em;
+  }
+}

@@ -1,0 +1,30 @@
+#About {
+  background: rgba(44, 62, 80, 0.7);
+
+  p {
+    font-family: "Courier New", Courier, monospace;
+    font-variant: normal;
+    color: whitesmoke;
+    // text-align: center;
+    margin: auto;
+    // padding: auto;
+  }
+  h4 {
+    font-weight: 400;
+    text-align: center;
+    &:after {
+      background: rgb(49, 49, 49);
+      content: "";
+      display: block;
+      width: 100px;
+      height: 3px;
+      margin: 20px auto;
+    }
+  }
+}
+footer {
+  font-variant: normal;
+  background: rgba(44, 62, 80, 0.9);
+  height: 60px;
+  color: whitesmoke;
+}

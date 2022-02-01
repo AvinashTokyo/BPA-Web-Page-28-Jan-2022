@@ -1,0 +1,87 @@
+@mixin banner-p-h1 {
+  font-variant: small-caps;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 250;
+}
+#banner {
+  // 0 0 is x-axis and y-axis
+  // no-repeat means image is not repeating
+  background: url("./img/banner.jpg") no-repeat 0 0;
+  //   This background-size -> div ki jitni size hogi utni hi image cover hogi
+  background-size: cover;
+  height: 350px;
+  .banner-title {
+    margin-left: 80px;
+    p.title {
+      @include banner-p-h1;
+      background: rgba(224, 226, 194, 0.7);
+      font-weight: bold;
+      font-size: 2em;
+      // is display inline block ki wajah se hi jo white background h us text tak hi hoga
+      display: inline-block;
+      margin: 0;
+      margin-top: 150px;
+    }
+    p.lead {
+      width: fit-content;
+      @include banner-p-h1;
+      color: #fff;
+      // to transparent the image we use alpha in rgba (0.7)
+      background: rgba(231, 76, 60, 0.7);
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #banner {
+    .container {
+      .row {
+        p.title {
+          font-size: 20px;
+          display: flex;
+          width: fit-content;
+        }
+        p.lead {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #banner {
+    height: auto;
+    width: auto;
+    .container {
+      .row {
+        p.title {
+          font-size: 16px;
+          display: flex;
+          width: fit-content;
+        }
+        p.lead {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #banner {
+    height: auto;
+    .container {
+      .row {
+        p.title {
+          font-size: 12px;
+          display: flex;
+          width: fit-content;
+        }
+        p.lead {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
